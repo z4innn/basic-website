@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<title>Reservation</title> <style> body { background-color: black; } </style> </head> 
+<body> <table width="100%" border="1"> 
+<tr> <td colspan="2" style="background-color: #D2B48C; text-align: center;"> 
+<h1>Reservation</h1> <img src="logo.jpg" alt="Em Hotel" align="center" height="120" width="130"> </td> </tr> 
+<tr valign="top"> <td style="background-color: #D2B48C; width: 150px;"> 
+<a href="index.html" style="font-family: Lucida Bright; font-size: 120%;">
+<font color="black">Home</font></a><br> <a href="about.html" style="font-family: Lucida Bright; font-size: 120%;">
+<font color="black">About</font></a><br> <a href="gallery.html" style="font-family: Lucida Bright; font-size: 120%;">
+<font color="black">Gallery</font></a><br> <a href="contact.html" style="font-family: Lucida Bright; font-size: 120%;">
+<font color="black">Contact Us</font></a><br> <a href="reservation.html" style="font-family: Lucida Bright; font-size: 120%;">
+<b><font color="black">Reservation</font></a><br> <a href="announcement.html" style="font-family: Lucida Bright; font-size: 120%;"></b>
+<font color="black">Announcement</font></a><br> </td> <body background="hotel.jpg"> 
+<td style="background-color: #D2B48C;" align="center" valign="top" width="900" height="500"> 
+<form action="!" method="post" style="background-color: #D2B48C; padding: 20px;"> <h2>Reservation Form</h2> 
+<label for="name" style="font-family: Lucida Bright;">Name:</label> <input type="text" id="name" name="name" required><br> 
+<label for="email" style="font-family: Lucida Bright;">Email:</label> <input type="email" id="email" name="email" required><br><br> 
+<label for="arrivalTime" style="font-family: Lucida Bright;">Arrival Time:</label> <input type="time" id="arrivalTime" name="arrivalTime" required><br><br> 
+<label for="arrivalDate" style="font-family: Lucida Bright;">Arrival Date:</label> <input type="date" id="arrivalDate" name="arrivalDate" required><br><br> 
+<label for="guest" style="font-family: Lucida Bright;">Number of Guest:</label> <input type="text" id="guest" name="guest" required><br><br> 
+<label for="roomtype" style="font-family: Lucida Bright;">Room Type:</label> <select id="roomtype" name="roomtype" required> 
+<option value="single" style="font-family: Lucida Bright;">Single</option> <option value="double" style="font-family: Lucida Bright;">Double</option> 
+<option value="suite" style="font-family: Lucida Bright;">Suite</option> </select><br><br> <label for="message" style="font-family: Lucida Bright;">Additional Requests:</label>
+<br> <textarea id="message" name="message" rows="5"></textarea><br><br> <input type="submit" value="Submit"> <input type="reset" value="Reset"> 
+<script> document.querySelector("form").addEventListener("submit", function (event) { event.preventDefault(); alert("Reservation submitted successfully!"); document.querySelector("form").reset(); }); </script> </form> </td> </tr> </table> </body> </html>
